@@ -17,7 +17,11 @@ jobs:
          run: ls
         - uses: actions/checkout@v3
         - name:  docker login --username ${{secrets.Docker_name}} --password ${{secrets.Doccker_Token}}
-        
+        - name: "bu d i"
+         run: docker build -t ${{secrets.Docker_name}} /myimage .
+        -name: "pushing to docker hub"
+         run: docker push ${{secrets.Docker_name}} /myimage
+
 
 
 

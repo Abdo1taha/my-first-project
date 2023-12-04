@@ -13,12 +13,17 @@ jobs:
 
 
     steps:
-      - name: 'Testing Github action'
-        run:pwd
+      - name: 'print for content'
+        run: ls
 
 
-        
-      - name: 'Tisting printing'
-       run: echo ahmed
+
+
+
+
+
+
+
+
 
 
